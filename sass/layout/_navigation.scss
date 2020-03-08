@@ -1,0 +1,27 @@
+.navigation {
+  position: fixed;
+  z-index: $index-navigation;
+  top: 0;
+  right: 0;
+
+  &__nav {
+    // background-color: #77cc77;
+  }
+
+  &__list {
+    display: flex;
+    direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin-right: 3rem;
+  }
+
+  &__item {
+    font-family: Changa, sans-serif;
+    font-size: 2rem;
+    color: $color-primary;
+    display: inline-block;
+    margin: 0;
+    padding: 0.5rem 2rem;
+  }
+}

@@ -1,0 +1,3 @@
+@function calcTotalHeight($section-height) {
+  @return calc(#{$section-height} + #{$peak-size});
+}

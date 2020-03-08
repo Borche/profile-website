@@ -1,0 +1,39 @@
+.header {
+  position: relative;
+  z-index: $index-header;
+  $height: calcTotalHeight(100vh);
+  height: $height;
+  background: $color-primary-background;
+  color: $color-primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100vh, 50% $height, 0 100vh);
+  clip-path: polygon(0 0, 100% 0, 100% 100vh, 50% $height, 0 100vh);
+
+  &__title {
+    margin-top: -20rem;
+    font-size: 4.4rem;
+  }
+
+  &__subtitle {
+    font-size: 3.3rem;
+  }
+
+  &__link {
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+
+    a {
+      border: 2px solid $color-primary-link;
+      background: rgba(255, 255, 255, 0.2);
+      display: inline-block;
+      padding: 1rem 3rem;
+      text-decoration: none;
+      color: $color-primary-link;
+    }
+  }
+}

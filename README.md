@@ -1,2 +1,2 @@
 # profile-website
-This is a website where I put my portfolio as a web developer
+This is the repo/website where I put my online portfolio as a developer.

@@ -1,0 +1,13 @@
+@mixin height-and-arrow($height) {
+  $totHeight: calcTotalHeight($height);
+  height: $totHeight;
+  padding: calc(6rem + #{$peak-size}) 6rem 10rem 6rem;
+  -webkit-clip-path: polygon(
+    0 0,
+    100% 0,
+    100% $height,
+    50% $totHeight,
+    0 $height
+  );
+  clip-path: polygon(0 0, 100% 0, 100% $height, 50% $totHeight, 0 $height);
+}

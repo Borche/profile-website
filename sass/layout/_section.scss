@@ -1,9 +1,5 @@
 .section {
   position: relative;
-  $height: 70vh;
-  $totHeight: calcTotalHeight($height);
-  height: $totHeight;
-  padding: calc(6rem + #{$peak-size}) 6rem 10rem 6rem;
   margin-top: -$peak-size;
 
   &__title {
@@ -17,24 +13,25 @@
   &--about {
     z-index: $index-about;
     background-color: white;
+    @include height-and-arrow(90rem);
   }
 
   &--skills {
     z-index: $index-skills;
-    background: $color-secondary-background;
+    // background: $color-secondary-background;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.65),
+        rgba(255, 255, 255, 0.65)
+      ),
+      url('../imgs/bg_skills.jpeg');
+    background-position: center;
+    background-size: cover;
+    @include height-and-arrow(82rem);
   }
 
   &--resume {
     z-index: $index-resume;
-    background-color: white;
+    background-color: $color-grey-light;
+    @include height-and-arrow(150rem);
   }
-
-  -webkit-clip-path: polygon(
-    0 0,
-    100% 0,
-    100% $height,
-    50% $totHeight,
-    0 $height
-  );
-  clip-path: polygon(0 0, 100% 0, 100% $height, 50% $totHeight, 0 $height);
 }

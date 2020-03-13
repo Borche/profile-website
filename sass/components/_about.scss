@@ -1,5 +1,7 @@
 .about {
   display: flex;
+  max-width: 100rem;
+  margin: 0 auto;
 
   &__left {
     display: flex;
@@ -10,8 +12,8 @@
       background-size: 100%;
       background-position: 0% 25%;
       background-repeat: no-repeat;
-      width: 20vw;
-      height: 20vw;
+      width: 30rem;
+      height: 30rem;
       border-radius: 50%;
       // border-radius: 10%;
     }

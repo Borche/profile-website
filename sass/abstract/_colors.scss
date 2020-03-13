@@ -1,8 +1,13 @@
-$color-darkgrey: #44475a;
+$color-grey-light: rgb(240, 240, 240);
+$color-grey-dark: #44475a;
+$color-purple: rgb(111, 0, 255);
 
 $color-primary: white;
-$color-secondary: $color-darkgrey;
+$color-secondary: $color-grey-dark;
 $color-primary-link: rgb(255, 230, 0);
+
+$color-work-text: rgb(0, 140, 255);
+$color-education-text: rgb(0, 199, 133);
 
 $color-primary-background: repeating-linear-gradient(
     45deg,

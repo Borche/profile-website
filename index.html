@@ -221,10 +221,81 @@
           </div>
         </div>
       </section>
+      <section class="section section--contact">
+        <h3 class="section__title">Contact me</h3>
+        <div class="contact">
+          <!--<div class="contact__post">
+            <div onclick="displayPhone()" id="phone-link" class="no-link">
+              <img src="imgs/logo_phone.png" />
+              <span id="phone">Click to see</span>
+            </div>
+          </div>-->
+
+          <div class="contact__post">
+            <div onclick="displayEmail()" id="email-link" class="no-link">
+              <img src="imgs/logo_mail.png" class="img-mail" /><span id="email"
+                >Click to see</span
+              >
+            </div>
+          </div>
+
+          <div class="contact__post">
+            <a
+              href="https://www.linkedin.com/in/andreasborjesson"
+              target="_blank"
+              ><img src="imgs/logo_linkedin.png" /><span>LinkedIn</span></a
+            >
+          </div>
+
+          <div class="contact__post">
+            <a href="https://github.com/borche" target="_blank">
+              <img src="imgs/logo_github.png" />
+              <span>Github</span></a
+            >
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
       <p>Some fine text</p>
     </footer>
+
+    <script>
+      function displayPhone() {
+        // Maybe in future
+      }
+
+      function displayEmail() {
+        document.getElementById('email').innerHTML = getEmail(
+          'andersson89lawrencereas@gmail.com'
+        );
+
+        let link = document.getElementById('email-link');
+        link.classList.add('no-link--clicked');
+        link.removeAttribute('onclick');
+      }
+
+      function getEmail(yeah) {
+        let startIndex = yeah.indexOf('lawrence') + 'lawrence'.length;
+        let stopIndex = yeah.indexOf('gma');
+        let realValue = yeah.substring(startIndex, stopIndex);
+
+        let a = 'bor';
+        let j = 'm';
+        let c = 'g';
+        let f = 'l';
+        let g = 'c';
+        let h = 'o';
+        let e = 'i';
+        let k = '.';
+        let d = 'a';
+        let x = 'm';
+        let b = 'and';
+        let y = 'jesson';
+
+        return `${a}${y}${k}${b}${realValue}${c}${x}${d}${e}${f}${k}${g}${h}${j}`;
+      }
+    </script>
   </body>
 </html>

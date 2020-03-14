@@ -18,7 +18,6 @@
 
   &--skills {
     z-index: $index-skills;
-    // background: $color-secondary-background;
     background-image: linear-gradient(
         rgba(255, 255, 255, 0.65),
         rgba(255, 255, 255, 0.65)
@@ -33,5 +32,17 @@
     z-index: $index-resume;
     background-color: $color-grey-light;
     @include height-and-arrow(150rem);
+  }
+
+  &--contact {
+    z-index: $index-contact;
+    background-image: linear-gradient(
+        rgba(155, 155, 155, 0.65),
+        rgba(155, 155, 155, 0.65)
+      ),
+      url('../imgs/bg_contact.jpeg');
+    background-position: center;
+    background-size: cover;
+    @include height-and-arrow(50rem);
   }
 }

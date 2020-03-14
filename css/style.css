@@ -77,6 +77,44 @@ a:hover {
       margin-top: 1.5rem;
       font-size: 1.8rem; }
 
+.contact {
+  background: rgba(255, 255, 255, 0.8);
+  min-height: 12rem;
+  width: 44%;
+  margin: 0 auto;
+  border-radius: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contact__post {
+    padding: 1rem 2rem;
+    position: relative;
+    font-size: 1.7rem;
+    text-align: center; }
+    .contact__post a,
+    .contact__post div {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      font-weight: bold; }
+      .contact__post a.no-link,
+      .contact__post div.no-link {
+        color: #20b14c; }
+        .contact__post a.no-link--clicked,
+        .contact__post div.no-link--clicked {
+          cursor: text;
+          font-size: 1.5rem;
+          color: #44475a; }
+      .contact__post a img,
+      .contact__post div img {
+        margin-right: 0.7rem;
+        height: 3rem; }
+        .contact__post a img.img-mail,
+        .contact__post div img.img-mail {
+          height: 4rem; }
+
 .resume {
   position: relative;
   display: flex;
@@ -305,3 +343,12 @@ a:hover {
     padding: calc(6rem + 10vh) 6rem 10rem 6rem;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 150rem, 50% calc(150rem + 10vh), 0 150rem);
     clip-path: polygon(0 0, 100% 0, 100% 150rem, 50% calc(150rem + 10vh), 0 150rem); }
+  .section--contact {
+    z-index: 1200;
+    background-image: linear-gradient(rgba(155, 155, 155, 0.65), rgba(155, 155, 155, 0.65)), url("../imgs/bg_contact.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: calc(50rem + 10vh);
+    padding: calc(6rem + 10vh) 6rem 10rem 6rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50rem, 50% calc(50rem + 10vh), 0 50rem);
+    clip-path: polygon(0 0, 100% 0, 100% 50rem, 50% calc(50rem + 10vh), 0 50rem); }

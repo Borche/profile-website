@@ -1,0 +1,48 @@
+.contact {
+  background: rgba(255, 255, 255, 0.8);
+  min-height: 12rem;
+  width: 44%;
+  margin: 0 auto;
+  border-radius: 10rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__post {
+    padding: 1rem 2rem;
+    position: relative;
+    font-size: 1.7rem;
+    text-align: center;
+
+    a,
+    div {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      text-decoration: none;
+      font-weight: bold;
+
+      &.no-link {
+        color: rgb(32, 177, 76);
+
+        &--clicked {
+          cursor: text;
+          font-size: 1.5rem;
+          color: $color-grey-dark;
+        }
+      }
+
+      img {
+        margin-right: 0.7rem;
+        height: 3rem;
+
+        &.img-mail {
+          height: 4rem;
+        }
+      }
+    }
+  }
+}

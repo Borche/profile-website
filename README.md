@@ -1,2 +1,2 @@
 # profile-website
-This is the repo/website where I put my online portfolio as a developer.
+This is the first version of my professional portfolio as a developer. Can be seen live here: https://borche.github.io/profile-website/

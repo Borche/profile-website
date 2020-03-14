@@ -1,6 +1,35 @@
 .footer {
   z-index: $index-footer;
-  height: 50vw;
+  height: 35vw;
   background: $color-primary-background;
   margin-top: -$peak-size;
+
+  color: white;
+  padding: 35rem 30rem 0 30rem;
+  text-shadow: 1px 1px black;
+
+  .links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    font-weight: bold;
+
+    &__item {
+      img {
+        height: 3rem;
+      }
+    }
+  }
+
+  p {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  .footer-text {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+  }
 }

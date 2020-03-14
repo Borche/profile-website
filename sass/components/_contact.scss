@@ -1,5 +1,5 @@
 .contact {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.85);
   min-height: 12rem;
   width: 44%;
   margin: 0 auto;
@@ -29,8 +29,11 @@
       text-decoration: none;
       font-weight: bold;
 
+      transition: all 1.5s;
+      transition-property: color, width;
+
       &.no-link {
-        color: rgb(32, 177, 76);
+        color: $color-green;
 
         &--clicked {
           cursor: text;

@@ -14,6 +14,10 @@
     z-index: $index-about;
     background-color: white;
     @include height-and-arrow(90rem);
+
+    @include respond-to('medium') {
+      @include height-and-arrow(145rem, 3rem);
+    }
   }
 
   &--skills {
@@ -26,12 +30,29 @@
     background-position: center;
     background-size: cover;
     @include height-and-arrow(82rem);
+
+    @include respond-to('medlarge') {
+      @include height-and-arrow(162rem);
+    }
   }
 
   &--resume {
     z-index: $index-resume;
     background-color: $color-grey-light;
     @include height-and-arrow(150rem);
+
+    @include respond-to('medium') {
+      @include height-and-arrow(160rem, 2rem);
+      padding-right: 6rem;
+    }
+
+    @include respond-to('smallmed') {
+      @include height-and-arrow(150rem, 3rem);
+    }
+
+    @include respond-to('small') {
+      @include height-and-arrow(170rem, 3rem);
+    }
   }
 
   &--contact {
@@ -44,5 +65,9 @@
     background-position: center;
     background-size: cover;
     @include height-and-arrow(50rem);
+
+    @include respond-to('smallmed') {
+      @include height-and-arrow(50rem, 2rem);
+    }
   }
 }

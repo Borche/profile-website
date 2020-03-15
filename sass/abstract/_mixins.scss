@@ -1,7 +1,7 @@
-@mixin height-and-arrow($height) {
+@mixin height-and-arrow($height, $sizePadding: 6rem, $topPadding: 6rem) {
   $totHeight: calcTotalHeight($height);
   height: $totHeight;
-  padding: calc(6rem + #{$peak-size}) 6rem 10rem 6rem;
+  padding: calc(#{$topPadding} + #{$peak-size}) #{$sizePadding} 10rem #{$sizePadding};
   -webkit-clip-path: polygon(
     0 0,
     100% 0,
@@ -10,4 +10,15 @@
     0 $height
   );
   clip-path: polygon(0 0, 100% 0, 100% $height, 50% $totHeight, 0 $height);
+}
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint `#{$breakpoint}` not found. "
+      + "Available breakpoints: #{may-keys($breakpoints)}";
+  }
 }

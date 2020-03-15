@@ -13,6 +13,18 @@
   -moz-box-shadow: 0px 10px 16px -8px rgba(0, 0, 0, 0.35);
   box-shadow: 0px 10px 16px -8px rgba(0, 0, 0, 0.35);
 
+  @include respond-to('large') {
+    width: 60%;
+  }
+
+  @include respond-to('medlarge') {
+    width: 70%;
+  }
+
+  @include respond-to('medium') {
+    width: 100%;
+  }
+
   &__post {
     padding: 1rem 2rem;
     position: relative;

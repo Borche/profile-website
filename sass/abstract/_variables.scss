@@ -7,3 +7,11 @@ $index-skills: 1400;
 $index-resume: 1300;
 $index-contact: 1200;
 $index-footer: 1000;
+
+$breakpoints: (
+  'small': 600px,
+  'smallmed': 720px,
+  'medium': 950px,
+  'medlarge': 1150px,
+  'large': 1500px
+) !default;

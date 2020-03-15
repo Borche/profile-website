@@ -16,10 +16,20 @@
   &__title {
     margin-top: -20rem;
     font-size: 4.4rem;
+    text-align: center;
+
+    @include respond-to('small') {
+      font-size: 3.7rem;
+    }
   }
 
   &__subtitle {
     font-size: 3.3rem;
+    text-align: center;
+
+    @include respond-to('small') {
+      font-size: 3rem;
+    }
   }
 
   &__link {

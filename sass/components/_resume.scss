@@ -34,6 +34,10 @@
     width: 100%;
   }
 
+  @include respond-to('xsmall') {
+    height: 90%;
+  }
+
   &:after {
     position: absolute;
     content: '';

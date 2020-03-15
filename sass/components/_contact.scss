@@ -25,11 +25,22 @@
     width: 100%;
   }
 
+  @include respond-to('small') {
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 3rem 0rem;
+  }
+
   &__post {
     padding: 1rem 2rem;
     position: relative;
     font-size: 1.7rem;
     text-align: center;
+
+    @include respond-to('small') {
+      padding: 1.5rem 0;
+    }
 
     a,
     div {

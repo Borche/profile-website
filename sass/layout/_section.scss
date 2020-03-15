@@ -18,6 +18,14 @@
     @include respond-to('medium') {
       @include height-and-arrow(145rem, 3rem);
     }
+
+    @include respond-to('xsmall') {
+      @include height-and-arrow(160rem, 3rem);
+    }
+
+    @include respond-to('tiny') {
+      @include height-and-arrow(175rem, 3rem);
+    }
   }
 
   &--skills {
@@ -33,6 +41,14 @@
 
     @include respond-to('medlarge') {
       @include height-and-arrow(162rem);
+    }
+
+    @include respond-to('xsmall') {
+      @include height-and-arrow(162rem, 3rem);
+    }
+
+    @include respond-to('tiny') {
+      @include height-and-arrow(175rem, 3rem);
     }
   }
 
@@ -53,6 +69,10 @@
     @include respond-to('small') {
       @include height-and-arrow(170rem, 3rem);
     }
+
+    @include respond-to('tiny') {
+      @include height-and-arrow(180rem, 1.5rem);
+    }
   }
 
   &--contact {
@@ -68,6 +88,10 @@
 
     @include respond-to('smallmed') {
       @include height-and-arrow(50rem, 2rem);
+    }
+
+    @include respond-to('small') {
+      @include height-and-arrow(55rem, 3rem);
     }
   }
 }

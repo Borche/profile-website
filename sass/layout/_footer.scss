@@ -25,6 +25,10 @@
     height: 55rem;
   }
 
+  @include respond-to('xsmall') {
+    height: 60rem;
+  }
+
   .links {
     list-style-type: none;
     display: flex;
@@ -66,5 +70,6 @@
     padding: 5rem 0;
     display: flex;
     justify-content: center;
+    text-align: center;
   }
 }

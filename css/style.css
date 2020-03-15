@@ -118,11 +118,20 @@ a:hover {
   @media (max-width: 950px) {
     .contact {
       width: 100%; } }
+  @media (max-width: 600px) {
+    .contact {
+      flex-direction: column;
+      align-items: center;
+      border-radius: 0.5rem;
+      padding: 3rem 0rem; } }
   .contact__post {
     padding: 1rem 2rem;
     position: relative;
     font-size: 1.7rem;
     text-align: center; }
+    @media (max-width: 600px) {
+      .contact__post {
+        padding: 1.5rem 0; } }
     .contact__post a,
     .contact__post div {
       cursor: pointer;
@@ -172,6 +181,9 @@ a:hover {
   @media (max-width: 600px) {
     .resume {
       width: 100%; } }
+  @media (max-width: 495px) {
+    .resume {
+      height: 90%; } }
   .resume:after {
     position: absolute;
     content: '';
@@ -303,6 +315,9 @@ a:hover {
       .skills__card {
         width: 40rem;
         margin-bottom: 6rem; } }
+    @media (max-width: 495px) {
+      .skills__card {
+        width: 100%; } }
     .skills__card__header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
       clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%); }
@@ -324,6 +339,9 @@ a:hover {
       @media (max-width: 950px) {
         .skills__card__content {
           padding: 2rem 4rem 3.5rem 4rem; } }
+      @media (max-width: 410px) {
+        .skills__card__content {
+          padding: 1.5rem 3rem 3rem 3rem; } }
       .skills__card__content h5 {
         font-size: 2rem; }
       .skills__card__content ul {
@@ -359,6 +377,9 @@ a:hover {
     .footer {
       padding: 15rem 2rem 0 2rem;
       height: 55rem; } }
+  @media (max-width: 495px) {
+    .footer {
+      height: 60rem; } }
   .footer .links {
     list-style-type: none;
     display: flex;
@@ -386,7 +407,8 @@ a:hover {
   .footer .footer-text {
     padding: 5rem 0;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    text-align: center; }
 
 .header {
   position: relative;
@@ -402,9 +424,17 @@ a:hover {
   clip-path: polygon(0 0, 100% 0, 100% 100vh, 50% calc(100vh + 10vh), 0 100vh); }
   .header__title {
     margin-top: -20rem;
-    font-size: 4.4rem; }
+    font-size: 4.4rem;
+    text-align: center; }
+    @media (max-width: 600px) {
+      .header__title {
+        font-size: 3.7rem; } }
   .header__subtitle {
-    font-size: 3.3rem; }
+    font-size: 3.3rem;
+    text-align: center; }
+    @media (max-width: 600px) {
+      .header__subtitle {
+        font-size: 3rem; } }
   .header__link {
     margin-top: 3rem;
     font-size: 2rem;
@@ -469,6 +499,18 @@ a:hover {
         padding: calc(6rem + 10vh) 3rem 10rem 3rem;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 145rem, 50% calc(145rem + 10vh), 0 145rem);
         clip-path: polygon(0 0, 100% 0, 100% 145rem, 50% calc(145rem + 10vh), 0 145rem); } }
+    @media (max-width: 495px) {
+      .section--about {
+        height: calc(160rem + 10vh);
+        padding: calc(6rem + 10vh) 3rem 10rem 3rem;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 160rem, 50% calc(160rem + 10vh), 0 160rem);
+        clip-path: polygon(0 0, 100% 0, 100% 160rem, 50% calc(160rem + 10vh), 0 160rem); } }
+    @media (max-width: 410px) {
+      .section--about {
+        height: calc(175rem + 10vh);
+        padding: calc(6rem + 10vh) 3rem 10rem 3rem;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 175rem, 50% calc(175rem + 10vh), 0 175rem);
+        clip-path: polygon(0 0, 100% 0, 100% 175rem, 50% calc(175rem + 10vh), 0 175rem); } }
   .section--skills {
     z-index: 1400;
     background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url("../imgs/bg_skills.jpeg");
@@ -484,6 +526,18 @@ a:hover {
         padding: calc(6rem + 10vh) 6rem 10rem 6rem;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 162rem, 50% calc(162rem + 10vh), 0 162rem);
         clip-path: polygon(0 0, 100% 0, 100% 162rem, 50% calc(162rem + 10vh), 0 162rem); } }
+    @media (max-width: 495px) {
+      .section--skills {
+        height: calc(162rem + 10vh);
+        padding: calc(6rem + 10vh) 3rem 10rem 3rem;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 162rem, 50% calc(162rem + 10vh), 0 162rem);
+        clip-path: polygon(0 0, 100% 0, 100% 162rem, 50% calc(162rem + 10vh), 0 162rem); } }
+    @media (max-width: 410px) {
+      .section--skills {
+        height: calc(175rem + 10vh);
+        padding: calc(6rem + 10vh) 3rem 10rem 3rem;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 175rem, 50% calc(175rem + 10vh), 0 175rem);
+        clip-path: polygon(0 0, 100% 0, 100% 175rem, 50% calc(175rem + 10vh), 0 175rem); } }
   .section--resume {
     z-index: 1300;
     background-color: #f0f0f0;
@@ -510,6 +564,12 @@ a:hover {
         padding: calc(6rem + 10vh) 3rem 10rem 3rem;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 170rem, 50% calc(170rem + 10vh), 0 170rem);
         clip-path: polygon(0 0, 100% 0, 100% 170rem, 50% calc(170rem + 10vh), 0 170rem); } }
+    @media (max-width: 410px) {
+      .section--resume {
+        height: calc(180rem + 10vh);
+        padding: calc(6rem + 10vh) 1.5rem 10rem 1.5rem;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 180rem, 50% calc(180rem + 10vh), 0 180rem);
+        clip-path: polygon(0 0, 100% 0, 100% 180rem, 50% calc(180rem + 10vh), 0 180rem); } }
   .section--contact {
     z-index: 1200;
     background-image: linear-gradient(rgba(155, 155, 155, 0.65), rgba(155, 155, 155, 0.65)), url("../imgs/bg_contact.jpeg");
@@ -525,3 +585,9 @@ a:hover {
         padding: calc(6rem + 10vh) 2rem 10rem 2rem;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 50rem, 50% calc(50rem + 10vh), 0 50rem);
         clip-path: polygon(0 0, 100% 0, 100% 50rem, 50% calc(50rem + 10vh), 0 50rem); } }
+    @media (max-width: 600px) {
+      .section--contact {
+        height: calc(55rem + 10vh);
+        padding: calc(6rem + 10vh) 3rem 10rem 3rem;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 55rem, 50% calc(55rem + 10vh), 0 55rem);
+        clip-path: polygon(0 0, 100% 0, 100% 55rem, 50% calc(55rem + 10vh), 0 55rem); } }

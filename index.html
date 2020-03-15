@@ -11,23 +11,23 @@
     <div class="navigation">
       <nav class="navigation__nav">
         <ul class="navigation__list">
-          <li class="navigation__item">Home</li>
-          <li class="navigation__item">About</li>
-          <li class="navigation__item">Services</li>
-          <li class="navigation__item">Resumé</li>
-          <li class="navigation__item">Contact</li>
+          <li class="navigation__item"><a href="#home">Home</a></li>
+          <li class="navigation__item"><a href="#about">About</a></li>
+          <li class="navigation__item"><a href="#services">Services</a></li>
+          <li class="navigation__item"><a href="#resume">Resumé</a></li>
+          <li class="navigation__item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
 
-    <header class="header">
+    <header class="header" id="home">
       <h1 class="header__title">Hi! I'm Andreas Börjesson.</h1>
       <h2 class="header__subtitle">I'm a full stack developer.</h2>
-      <h3 class="header__link"><a href="#">Read more &rarr;</a></h3>
+      <h3 class="header__link"><a href="#about">Read more &rarr;</a></h3>
     </header>
 
     <main>
-      <section class="section section--about">
+      <section id="about" class="section section--about">
         <h3 class="section__title">About me</h3>
         <div class="about">
           <div class="about__left">
@@ -88,7 +88,7 @@
           </div>
         </div>
       </section>
-      <section class="section section--skills">
+      <section id="services" class="section section--skills">
         <h3 class="section__title">My services</h3>
         <div class="skills">
           <div class="skills__card">
@@ -132,7 +132,7 @@
           </div>
         </div>
       </section>
-      <section class="section section--resume">
+      <section id="resume" class="section section--resume">
         <h3 class="section__title">Resumé</h3>
         <div class="resume">
           <div class="resume__post">
@@ -221,7 +221,7 @@
           </div>
         </div>
       </section>
-      <section class="section section--contact">
+      <section id="contact" class="section section--contact">
         <h3 class="section__title">Contact me</h3>
         <div class="contact">
           <!--<div class="contact__post">
@@ -259,11 +259,11 @@
 
     <footer class="footer">
       <ul class="links">
-        <li class="links__item">Home</li>
-        <li class="links__item">About</li>
-        <li class="links__item">Services</li>
-        <li class="links__item">Resumé</li>
-        <li class="links__item">Contact</li>
+        <li class="links__item"><a href="#home">Home</a></li>
+        <li class="links__item"><a href="#about">About</a></li>
+        <li class="links__item"><a href="#services">Services</a></li>
+        <li class="links__item"><a href="#resume">Resumé</a></li>
+        <li class="links__item"><a href="#contact">Contact</a></li>
         <li class="links__item">
           <a href="https://www.linkedin.com/in/andreasborjesson" target="_blank"
             ><img src="imgs/logo_text_linkedin.png"
@@ -280,10 +280,31 @@
       </div>
     </footer>
 
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script>
-      function displayPhone() {
-        // Maybe in future
-      }
+      $(document).ready(function() {
+        // Add smooth scrolling to all links
+        $('a').on('click', function(event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash) {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+            event.stopPropagation();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate(
+              {
+                scrollTop: $(hash).offset().top
+              },
+              400
+            );
+          }
+        });
+      });
 
       function displayEmail() {
         document.getElementById('email').innerHTML = getEmail(

@@ -16,6 +16,11 @@
     font-weight: bold;
 
     &__item {
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
       img {
         height: 3rem;
       }

@@ -1,27 +1,39 @@
 .navigation {
   position: fixed;
   z-index: $index-navigation;
-  top: 0;
-  right: 0;
+  top: -5rem;
+  right: -5rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10rem;
+
+  -webkit-box-shadow: 0px 10px 21px -5px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 10px 21px -5px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 10px 21px -5px rgba(0, 0, 0, 0.26);
 
   &__nav {
-    // background-color: #77cc77;
+    padding: 1rem 1rem;
+    margin-top: 5rem;
+    margin-right: 5rem;
   }
 
   &__list {
     display: flex;
-    direction: row;
     justify-content: flex-end;
     list-style-type: none;
-    margin-right: 3rem;
+    margin-left: 2rem;
   }
 
   &__item {
-    font-family: Changa, sans-serif;
-    font-size: 2rem;
-    color: $color-primary;
+    font-family: Bellota, sans-serif;
+    font-size: 1.9rem;
     display: inline-block;
     margin: 0;
-    padding: 0.5rem 2rem;
+    padding: 0.2rem 2.5rem;
+    font-weight: 600;
+
+    a {
+      text-decoration: none;
+      color: $color-grey-dark;
+    }
   }
 }

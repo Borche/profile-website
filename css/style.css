@@ -28,6 +28,10 @@ body {
   font-family: Arima-Madurai;
   src: url(fonts/arimamadurai-thin.ttf); }
 
+@font-face {
+  font-family: Bellota;
+  src: url(fonts/bellotatext-light.ttf); }
+
 body {
   font-family: Arima-Madurai, sans-serif;
   font-weight: 100; }
@@ -276,6 +280,9 @@ a:hover {
     justify-content: space-evenly;
     font-size: 2rem;
     font-weight: bold; }
+    .footer .links__item a {
+      color: white;
+      text-decoration: none; }
     .footer .links__item img {
       height: 3rem; }
   .footer p {
@@ -318,21 +325,32 @@ a:hover {
 .navigation {
   position: fixed;
   z-index: 3000;
-  top: 0;
-  right: 0; }
+  top: -5rem;
+  right: -5rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10rem;
+  -webkit-box-shadow: 0px 10px 21px -5px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 10px 21px -5px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 10px 21px -5px rgba(0, 0, 0, 0.26); }
+  .navigation__nav {
+    padding: 1rem 1rem;
+    margin-top: 5rem;
+    margin-right: 5rem; }
   .navigation__list {
     display: flex;
-    direction: row;
     justify-content: flex-end;
     list-style-type: none;
-    margin-right: 3rem; }
+    margin-left: 2rem; }
   .navigation__item {
-    font-family: Changa, sans-serif;
-    font-size: 2rem;
-    color: white;
+    font-family: Bellota, sans-serif;
+    font-size: 1.9rem;
     display: inline-block;
     margin: 0;
-    padding: 0.5rem 2rem; }
+    padding: 0.2rem 2.5rem;
+    font-weight: 600; }
+    .navigation__item a {
+      text-decoration: none;
+      color: #44475a; }
 
 .section {
   position: relative;
